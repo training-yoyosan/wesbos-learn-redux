@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 const PhotoGrid = React.createClass({
   render() {
     return (
-      <div class="photo-grid">
+      <div className="photo-grid">
         I'm the photo grid.
       </div>
     )

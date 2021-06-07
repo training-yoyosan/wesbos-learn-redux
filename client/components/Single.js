@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 const Single = React.createClass({
   render() {
     return (
-      <div class="single-photo">
+      <div className="single-photo">
         I'm the single
       </div>
     )
