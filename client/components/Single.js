@@ -9,12 +9,11 @@ const Single = React.createClass({
     const i = this.props.posts.findIndex((post) => post.code === postId)
     const post = this.props.posts[i]
     const postComments = this.props.comments[postId] || []
-    console.log(postId, postComments, this.props.comments);
 
     return (
       <div className="single-photo">
         <Photo i={i} post={post} {...this.props} />
-        <Comments postComments={postComments} />
+        <Comments postComments={postComments} {...this.props} />
       </div>
     )
   }
